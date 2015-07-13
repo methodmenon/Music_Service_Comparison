@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Audio Service Analytics</title>
+
+	<!--Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900|Ubuntu+Condensed|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--Javascript-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body>
+	<header class="container" id="header">
+		<section class="cf" id="logo">Audio<p id="title_2">Service</p><p id="title_3"> Analytics</p></section>
+		<section class="nav_container" id="header_navigation">
+			<section class="nav header_nav home_nav"><a href="#">Home</a></section>
+			<section class="nav header_nav instructions_nav"><a href="#">Instructions</a></section>
+			<section class="nav header_nav about_nav"><a href="#">About</a></section>
+		</section>
+	</header>
+	<!-- <section class="container" id="instructions"></section> -->
+
+	<section class="container" id="application_container">
+		<form id="run_app" onsubmit="return false">
+			<section id="blurb"><p id="blurb_upper">COMPARE</p><p id="blurb_lower">Choose 2 audio stream services and see how they compare on your criteria of interest</p></section>
+			<section id="instructions"><p id="blurb_upper">INSTRUCTIONS</p><p id="blurb_lower">Choose 2 audio stream services and see how they compare on your criteria of interest</p></section>
+			<section id="about"><p id="blurb_upper">ABOUT</p><p id="blurb_lower">Choose 2 audio stream services and see how they compare on your criteria of interest</p></section>
+			<section id="artist_choice_container">
+				<input type="text" id="artist_choice" name="artist_choice" onClick="this.value='';" placeholder="Enter Your Artist Name Here">
+			</section>
+				<section id="service_selections" id="service_one_container"> 
+					<span class="input_description" id="service_description"><p class="description">Select Your Music Services</p></span>
+					<select class="choice_container" id="service_one_container" name="service_one_container">
+						<option value="default_1" selected>Option 1</option>
+						<option value="Spotify">Spotify</option>
+						<option value="iTunes">iTunes</option>
+						<option value="SoundCloud">SoundCloud</option>
+						<option value="Last.FM">Last.FM</option>
+						<option value="Pandora">Pandora</option>
+					</select>
+					<select class="choice_container" id="service_two_container" name="service_two_container">
+						<option value="default_2" selected>Option 2</option>
+						<option value="Spotify">Spotify</option>
+						<option value="iTunes">iTunes</option>
+						<option value="SoundCloud">SoundCloud</option>
+						<option value="Last.FM">Last.FM</option>
+						<option value="Pandora">Pandora</option>
+					</select>
+				</section>
+				<section id="comparison_container">
+					<span class="input_description" id="comparison_description"><p class="description">Select Your Comparison Method</p></span>
+					<select class="choice_container" id="comparison_choice" name="comparison_choice">
+						<option value="albums" selected>Albums</option>
+						<option value="top_tracks">Top Tracks</option>
+						<option value="activity">Recent Activity</option>
+					</select>
+				</section>
+				<section id="compare_button_container">
+					<input type="submit" class="btn" id="compare_btn" value="Click To Compare">
+				</section>
+		</form>
+	</section>
+	<div class="loading">Loading&#8230;</div>
+	<section class="container cf" id="results_container">
+	</section>
+	<section class="container templates hidden">
+		<section class="results cf" id="results_one">
+			<p class="result result_title"></p>
+			<p class="result result_artist"></p>
+			<p class="result comparison_title"></p>
+			<section class="result result_elements"></section>
+		</section>
+		<div class="result_element">
+			<span class="this_result"></span>
+		</div>
+	</section>
+	<footer class="container">
+		<section class="nav_container" id="footer_navigation">
+			<section class="nav footer_nav home_nav"><a href="#">Home</a></section>
+			<section class="nav footer_nav instructions_nav"><a href="#">Instructions</a></section>
+			<section class="nav footer_nav about_nav"><a href="#">About</a></section>
+		</section>
+	</footer>
+</body>
+</html>

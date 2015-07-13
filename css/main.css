@@ -1,0 +1,663 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+======================================
+RESET CSS
+=======================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+==============================================
+Clearfix
+================================================
+*/
+
+.cf:before,
+.cf:after {
+content: "";
+display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+===================================================
+WEBSITE LAYOUT CODE 
+===================================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/*
+==========================================
+Header
+==========================================
+*/
+header {
+  padding: 20px 50px 120px 50px;
+  background-color: #434245;
+  /*border-bottom: 5px solid black;*/
+}
+
+
+#logo {
+  float: left;
+  font-family: 'Lato', sans-serif;
+  /*font-weight: ;*/
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+#title_2 {
+  text-indent: 20px;
+}
+
+#title_3 {
+  text-indent: 40px;
+}
+
+#header_navigation {
+  float: right;
+  /*border: 1px dashed black;*/
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+/*
+=======================================================
+Navigation and Links
+=======================================================
+*/
+
+
+.nav {
+  display: inline-block;
+  color: black;
+  font-size: 25px;
+  /*margin-right: 20px;
+  margin-left: 50px;*/
+  padding: 25px 40px;
+}
+
+.header_nav{
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.nav:hover {
+  background-color: #6F6C78;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+==========================================
+Application sections
+==========================================
+*/
+
+#application_container {
+  padding: 22px 50px 10px 50px;
+  background-color: #434245;
+  color: black;
+}
+
+#blurb {
+  padding: 10px 0 20px 20px;
+  border-top: 10px solid black;
+  border-bottom: 1px solid #849091;
+}
+
+#instructions {
+  display: none;
+  padding: 10px 0 20px 20px;
+  border-top: 10px solid black;
+  border-bottom: 1px solid #849091;
+}
+
+#about {
+  display: none;
+  padding: 10px 0 20px 20px;
+  border-top: 10px solid black;
+  border-bottom: 1px solid #849091;
+}
+
+#blurb_upper {
+  font-size: 25px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+#blurb_lower {
+  font-size: 20px;
+}
+
+#artist_choice_container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+#artist_choice {
+  display: inline-block;
+  width: 35%;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.input_description {
+  display: block;
+}
+
+#service_description {
+  padding-left: 50px;
+}
+
+.description {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#service_selections {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 40px 20px 40px 280px;
+}
+
+.choice_container {
+  display: inline-block;
+  width: 20%;
+  padding: 20px 0 20px 5px;
+  /*border-bottom: 1px solid black;*/
+  background-color: #434245;
+  font-size: 16px;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.choice_container:hover {
+  background-color: #6F6C78;
+}
+
+select {
+  background: transparent;
+  border: 1px solid #434245;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+#service_one_container {
+  margin-right: 50px;
+}
+
+#service_two_container {
+  margin-left: 50px;
+}
+
+#comparison_container {
+  border-bottom: 1px solid black;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+
+#comparison_choice {
+  padding-left: 50px;
+  text-align: none;
+}
+
+
+#compare_button_container {
+  border-top: 1px solid black;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+/*
+===========================================
+Dropdown Styling
+===========================================
+*/
+
+
+/*li:hover {
+
+}
+
+li > a {
+  display: block;
+  color: #444;
+}
+
+li > a:hover {
+  background-color: #fff;
+}
+
+li > a.active{}
+
+.tab {
+  position: relative;
+  /*width: 33.33%;*/
+  /*padding: 20px 25px;
+  background-color: #008080;
+  text-align: center;
+}
+
+ul.tab li a:hover {
+  background-color: #fff;
+}
+
+.tab {
+  position: absolute;
+  z-index: 500;
+  display: none;
+  text-align: center;
+}
+
+li:hover > .tab {
+  position: absolute;
+  display: block;
+}*/
+
+/*ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+ul.dropdown {
+  position: relative;
+}
+
+ul.dropdown li{
+  position: relative;
+  text-align: center;
+  /*float: left;
+}
+
+ul.dropdown a:hover {
+  color: #000;
+}
+
+ul.dropdown li a {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: #34495e;
+  z-index: 2000;
+}
+
+ul.dropdown li a:hover,
+ul.dropdown li a.hover {
+  background: #3498db;
+  position: relative;
+  color: #fff;
+}
+
+ul.dropdown ul{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+ul.dropdown ul li {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+ul.dropdown ul li a{
+  display: inline-block;
+  color: #34495e !important;
+  /*background: #eee !important;
+  text-align: center;
+}
+
+ul.dropdown ul li a:hover{
+  display: inline-block;
+  background: #3498db !important;
+  color: #fff !important;
+}
+
+.drop > a{
+  position: relative;
+}
+
+.drop > a:after{
+  content:"";
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #333;
+  border-right: 5px solid transparent;
+  z-index: 999;
+}
+
+.drop > a:hover:after{
+  content:"";
+   border-left: 5px solid transparent;
+  border-top: 5px solid #fff;
+  border-right: 5px solid transparent;
+}*/
+
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+  background-color: #849091;
+}
+
+.btn:hover {
+  background-color: #6F6C78;
+}
+
+#compare_btn {
+  /*border: 1px solid black;*/
+  padding: 10px 30px;
+  width: 40%;
+  font-size: 20px;
+}
+
+/*
+===========================================
+Results Sections
+============================================
+*/
+.hidden {
+  display: none;
+}
+
+#results_container {
+  background-color: #434245;
+  padding: 10px 0 10px 60px;
+  border-bottom: 5px solid black;
+}
+
+/*.results {
+  display: inline-block;
+  margin-right: 100px;
+  margin: 0 50px 0 50px;
+  width: 35%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border: 1px dashed black;
+  height: 500px;
+}*/
+
+.results {
+  display: block;
+  float: left;
+  margin-right: 100px;
+  margin: 0 50px 0 50px;
+  width: 35%;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border: 2px solid black;
+}
+
+.result {
+  padding-bottom: 10px;
+}
+
+.result_title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.result_artist{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comparison_title {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 2px solid black;
+}
+
+.result_elements {
+  display: inline-block;
+  padding: 5px 40px 5px 40px;
+}
+
+
+
+/*
+==============================================
+Footer
+=============================================
+*/
+footer {
+ /* padding: 20px 50px 30px 50px;*/
+ padding-top: 5px;
+ display: block;
+ clear: both;
+background-color: #434245;
+  /*text-align: center;*/
+}
+
+#footer_navigation {
+  /*float: left;*/
+  text-align: center;
+}
+
+.footer_nav {
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+/*
+===============================================================
+Loading Animation
+===============================================================
+*/
+/* Absolute Center CSS Spinner */
+.loading {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
